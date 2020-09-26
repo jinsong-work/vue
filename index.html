@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- 宿主文件 -->
+        <div id="app">
+            {{title}}
+        </div>
+
+        <script src="vue.js"></script>
+        <script>
+            // 创建vue实例
+            const app = new Vue({
+                el:'#app',
+                data() {
+                    return {
+                        title: 'hello vue!'
+                    }
+                },          
+            })
+            setInterval(() => {
+                    app.title = 'mua  ~ vue !!!!!!';
+                }, 1000);
+        </script>
+    </body>
+</html>
